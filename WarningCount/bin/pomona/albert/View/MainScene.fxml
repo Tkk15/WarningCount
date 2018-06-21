@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: TURQUOISE;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pomona.albert.View.MainSceneController">
+   <children>
+      <HBox layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="317.0" spacing="20.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <TextField fx:id="ID" promptText="ID #" style="-fx-border-color: blue;" />
+            <TextField fx:id="license" promptText="License #" style="-fx-border-color: BLUE;" />
+         </children>
+      </HBox>
+      <Button layoutX="387.0" layoutY="24.0" mnemonicParsing="false" onAction="#addPerson" style="-fx-border-color: blue;" text="Add Person" />
+      <ListView fx:id="personListView" layoutX="22.0" layoutY="136.0" prefHeight="243.0" prefWidth="544.0" style="-fx-border-color: blue;" />
+      <Button fx:id="deletePerson" layoutX="468.0" layoutY="24.0" mnemonicParsing="false" onAction="#deletePerson" style="-fx-border-color: blue;" text="Delete Person" />
+      <TextArea fx:id="description" layoutX="23.0" layoutY="61.0" prefHeight="72.0" prefWidth="544.0" promptText="Description of Warning" style="-fx-border-color: BLUE;" />
+   </children>
+</Pane>
